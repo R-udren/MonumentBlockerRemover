@@ -19,12 +19,6 @@ Copy `MonumentBlockerRemover.cs` into your server's `oxide/plugins/` folder. Oxi
 - Facepunch's built-in `printmonumentblocker` console command (run as a player) dumps any blockers that remain
 - Unloading the plugin does not respawn already-removed blockers - Facepunch despawns them permanently for the wipe once destroyed. Remove the plugin before a wipe if you want blockers on the next map
 
-## Technical details
-
-- `MonumentBlocker` is a `StagedResourceEntity` that spawns with map generation and is serialized into the save file; it never respawns mid-wipe once destroyed
-- Entities are snapshotted into a list before killing, since `Kill` mutates `BaseNetworkable.serverEntities` during enumeration
-- Verified against Rust build 25454815 (September 2026), Oxide v2.0.7726
-
 ## License
 
 [MIT](LICENSE)
