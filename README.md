@@ -13,18 +13,6 @@ Oxide plugin for Rust. Deletes all **monument blockers** (Facepunch "Breach and 
 
 Copy `MonumentBlockerRemover.cs` into your server's `oxide/plugins/` folder. Oxide compiles and loads it automatically.
 
-## Configuration
-
-None. The plugin has a single behavior and nothing worth tuning.
-
-## Commands
-
-None.
-
-## Permissions
-
-None. The plugin runs server-side on startup and never interacts with players.
-
 ## Notes for server owners
 
 - After boot, check the Oxide log for `Removed N monument blocker(s)` to confirm
