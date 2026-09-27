@@ -11,7 +11,12 @@ Oxide plugin for Rust. Deletes all **monument blockers** (Facepunch "Breach and 
 
 ## Installation
 
-Copy `MonumentBlockerRemover.cs` into your server's `oxide/plugins/` folder. Oxide compiles and loads it automatically.
+Copy `MonumentBlockerRemover.cs` into your framework's plugin folder:
+
+- **Oxide/uMod**: `oxide/plugins/`
+- **Carbon**: `carbon/plugins/`
+
+The plugin compiles and loads automatically on both frameworks (verified on Oxide v2.0.7726 and Carbon 2.0.259.0).
 
 ## Notes for server owners
 
